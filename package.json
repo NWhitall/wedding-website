@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "rungulp": "gulp",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "ng build --aot -prod"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
   "license": "GPL-3.0",
   "homepage": "https://github.com/rampatra/wedding-website",
   "devDependencies": {
+    "@angular/cli": "^7.2.2",
+    "@angular/compiler-cli": "^7.2.1",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
@@ -28,11 +31,11 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
     "font-awesome": "^4.7.0",
     "git": "^0.1.5",
     "gulp-cli": "^2.0.1",
-    "waypoints": "^4.0.1",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "waypoints": "^4.0.1"
   }
 }
