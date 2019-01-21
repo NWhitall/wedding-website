@@ -214,8 +214,8 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== '94e3102229a53d7e0d7ae6d44f28e427'
+            && MD5($('#invite_code').val()) !== '94e3102229a53d7e0d7ae6d44f28e427') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
@@ -237,7 +237,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var itc_kol = {lat: 22.5932759, lng: 88.27027720000001};
+    var itc_kol = {lat: -32.780239, lng: 151.985360};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: itc_kol,
@@ -251,17 +251,17 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
-    });
+    // var la_fiesta = {lat: -32.780239, lng: 151.985360};
+    // var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    //     zoom: 15,
+    //     center: la_fiesta,
+    //     scrollwheel: false
+    // });
 
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
-    });
+    // var marker = new google.maps.Marker({
+    //     position: la_fiesta,
+    //     map: map
+    // });
 }
 
 // alert_markup
@@ -487,3 +487,6 @@ var MD5 = function (string) {
 
     return temp.toLowerCase();
 };
+
+
+// console.log(MD5('253756'));

@@ -4,7 +4,9 @@
   "description": "A wedding website with loads of features.",
   "main": "npmfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rungulp": "gulp",
+    "start": "ng serve"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "font-awesome": "^4.7.0",
+    "gulp-cli": "^2.0.1",
     "waypoints": "^4.0.1"
   }
 }
