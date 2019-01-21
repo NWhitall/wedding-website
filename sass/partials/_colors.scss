@@ -11,9 +11,14 @@ $txt-accent: #ACB1B4;
 $form-placeholder: #BCC1C3;
 // form placeholder text
 // Global colours
-$accent-color: #e8ca6f;
+$accent-color: #FFFFFF;
 // global accent colour
-$accent-color-hover: #d3b56a;
+$accent-color-hover: #FFFFFF;
+// global accent colour
+$accent-color-old: #e8ca6f;
+// global accent colour
+$accent-color-hover-old: #d3b56a;
+$btn-accent-color-hover: #b1b6c0;
 // global accent colour hover
 $white-color: #fff;
 $black-color: #000;
@@ -25,7 +30,7 @@ $h5-color: #3D4351;
 $section-light: #fff;
 $section-dark: #f8f9fd;
 $to-top-bg: #495061;
-$footer-primary: #3D4351;
+$footer-primary: rgb(18, 21, 27);
 $footer-secondary: #373D4A;
 // Keylines
 $keyline-color: #E6E9EA;

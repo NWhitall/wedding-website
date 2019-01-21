@@ -5,9 +5,12 @@
 .btn {
 	font-size: 13px;
 	border: solid 2px;
-	-moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
+	// -moz-border-radius: 40px;
+	// -webkit-border-radius: 40px;
+	// border-radius: 40px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 00px;
+	border-radius: 0px;
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -19,30 +22,37 @@
 .btn-white {
 	font-size: 13px;
 	border: solid 2px;
-	-moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
+	// -moz-border-radius: 40px;
+	// -webkit-border-radius: 40px;
+	// border-radius: 40px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 	display: inline-block;
 	border-color: $txt-light;
 }
 .btn-white:hover, .btn-white:focus {
 	color: $accent-color;
 	border-color: $accent-color;
+	background-color: $btn-accent-color-hover;
 }
 .btn-fill {
 	color: $white-color;
 	border: solid 2px $accent-color;
-	-moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
+	// -moz-border-radius: 40px;
+	// -webkit-border-radius: 40px;
+	// border-radius: 40px;
 	display: inline-block;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 	text-transform: uppercase;
 	background-color: $accent-color;
 }
 .btn-fill:hover, .btn-fill:focus {
 	color: $white-color;
-	background-color: $accent-color-hover;
-	border-color: $accent-color-hover;
+	background-color: $accent-color;
+	border-color: $accent-color;
 }
 .btn-small {
 	padding: 8px 30px;
@@ -53,3 +63,7 @@
 .btn-margin-right {
 	margin-right: 20px;
 }
+// .btn-accent {
+// 	// color: #3D4963 !important;
+// 	border-radius: 0px !important;
+// }
