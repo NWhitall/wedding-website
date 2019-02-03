@@ -96,7 +96,7 @@ $(document).ready(function () {
                     "padding": "25px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "26px",
+                    "top": "31px",
                 });
                 $('header .navicon').css({
                     "top": "30px",
@@ -108,7 +108,7 @@ $(document).ready(function () {
                     "padding": "30px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "41px",
+                    "top": "33px",
                 });
                 $('header .navicon').css({
                     "top": "48px",
@@ -214,11 +214,13 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
+        //10102019
         if (MD5($('#invite_code').val()) !== '94e3102229a53d7e0d7ae6d44f28e427'
+            && MD5($('#invite_code').val()) !== '0833332d7dd1575a6a23dc6556ccf8a3'
             && MD5($('#invite_code').val()) !== '94e3102229a53d7e0d7ae6d44f28e427') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
+            $.post('https://script.google.com/macros/s/AIzaSyCdOOWG-G4kbQTuftGna_oXSsFswptN6aE/exec', data)
                 .done(function (data) {
                     console.log(data);
                     $('#alert-wrapper').html('');

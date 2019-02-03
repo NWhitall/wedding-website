@@ -15,9 +15,9 @@
 	text-transform: uppercase;
 }
 .btn:hover, .btn:focus {
-	color: $white-color;
-	border-color: $accent-color;
-	background-color: $accent-color;
+	color: $accent-color-hover-old;
+	border-color: $accent-color-hover-old;
+	background-color: $white-color;
 }
 .btn-white {
 	font-size: 13px;
